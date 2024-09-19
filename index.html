@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Nani!</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Confetti JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <div class="welcome-screen">
+        <h1>Happy Birthday, Nani! 🎉🎂</h1>
+        <p style="color: #f71b91;font-size: 20px;text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">
+            From the moment I met you, my world changed in the most beautiful way. Every day with you is a gift, and I feel incredibly lucky to have found someone as amazing as you. You bring so much joy and love into my life, and I want you to know how deeply I cherish you. I love you more than words can express, and I can't wait to celebrate this special day with you! 💕
+        </p>
+        <button id="revealButton">Click to Reveal the Magic!</button>
+        <img src="heart.gif" alt="Love GIF" class="floating-gif heart-gif">
+    </div>
+
+    <!-- Surprise Section (Initially Hidden) -->
+    <div class="surprise-section hidden" id="surpriseSection">
+        <h2 style="font-size: 30px; color: #ff0000; text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">🎉 Surprise! 🎉</h2>
+        <p style="color: #f71b91;font-size: 20px;text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">Here’s a special message from Mee.</p>
+        <p style="color: #f71b91;font-size: 20px;text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">
+            This picture captures a moment that makes my heart overflow with love. Every time I look at it, I see us as a married couple, building a future filled with happiness and love. It’s a reminder of how safe and content I feel with you by my side. You make me feel cherished and protected, and I am so grateful for the way you love me. This image symbolizes the beautiful journey we’re on together, and it fills me with joy thinking about all the adventures we’ll share. 💕
+        </p>
+        <img src="couple-photo.jpg" alt="Cute Couple Photo" class="center-image">
+        <img src="cake.gif" alt="Birthday Cake GIF" class="floating-gif cake-gif">
+        <button id="clickButton">Click to Reveal Your Final Surprise</button>
+    </div>
+
+    <!-- Final Message Section -->
+    <div class="final-message hidden" id="finalMessage">
+        <h2 style="font-size: 30px; color: #ff0000; text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">
+            Sending you all the love! 💖
+        </h2>
+        <p style="color: #f71b91;font-size: 20px;text-align: center; line-height: 1.5; margin: 20px; padding: 20px; font-weight: bold;">
+            As we celebrate your special day, I want you to know how much you mean to me. You are my rock, my confidant, and my greatest joy. Every moment with you is precious, and I am so thankful for your love and support. I hope today is as wonderful and extraordinary as you are. Thank you for being the incredible person you are and for making every day brighter. I love you more than you can ever know, and I’m excited for all the amazing moments we’ll share in the future. Here’s to many more birthdays together! 🎂🎉
+        </p>
+        <img src="love-pop.gif" alt="Love Popping" class="center-image">
+    </div>
+
+    <!-- Canvas for Confetti and Balloons -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Love symbols floating -->
+    <div class="floating-container">
+        <div class="floating-symbol">💖</div>
+        <div class="floating-symbol">🎈</div>
+        <div class="floating-symbol">🎂</div>
+        <div class="floating-symbol">💝</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
